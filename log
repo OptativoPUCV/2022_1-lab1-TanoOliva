@@ -261,3 +261,9 @@ exercises.c:79:12: error: 'a' is used uninitialized in this function [-Werror=un
 cc1.exe: all warnings being treated as errors
 Compilation failed
 f22aabc
+Fri Mar 11 23:37:34 HSP 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|5
+total_score: 20/70
+d6df5ce
