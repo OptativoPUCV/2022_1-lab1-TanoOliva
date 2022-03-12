@@ -58,7 +58,13 @@ typedef struct {
 
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
-   return NULL;
+   Persona* Juan=malloc(sizeof(Persona));
+   memcpy(nombre,Juan.nombre,30);
+   memcpy(rut,Juan.rut,30);
+   Juan.edad=edad;
+
+   
+   return Juan;
 }
 
 /*
@@ -75,10 +81,7 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-   Vector a;
-   a.datos=calloc(n,sizeof(int));
-   return *a.datos;
-}
+   
 
 /*
 Ejercicio 5a.

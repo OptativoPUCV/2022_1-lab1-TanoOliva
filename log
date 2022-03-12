@@ -163,3 +163,37 @@ exercises.c:80:11: error: return makes pointer from integer without a cast [-Wer
 cc1.exe: all warnings being treated as errors
 Compilation failed
 2ee10f6
+Fri Mar 11 23:29:31 HSP 2022: 
+ exercises.c | 13 ++++++++-----
+ 1 file changed, 8 insertions(+), 5 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearPersona':
+exercises.c:62:22: error: 'Juan' is a pointer; did you mean to use '->'?
+    memcpy(nombre,Juan.nombre,30);
+                      ^
+                      ->
+exercises.c:63:19: error: 'Juan' is a pointer; did you mean to use '->'?
+    memcpy(rut,Juan.rut,30);
+                   ^
+                   ->
+exercises.c:64:8: error: 'Juan' is a pointer; did you mean to use '->'?
+    Juan.edad=edad;
+        ^
+        ->
+test.c: In function 'crearVector':
+test.c:244:5: error: 'main' is normally a non-static function [-Werror=main]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+test.c:266:1: error: expected declaration or statement at end of input
+ }
+ ^
+test.c:266:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+At top level:
+test.c:244:5: error: 'main' defined but not used [-Werror=unused-function]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+db7dd97
