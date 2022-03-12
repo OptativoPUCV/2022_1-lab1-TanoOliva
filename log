@@ -406,3 +406,17 @@ Sat Mar 12 11:06:36 HSP 2022:
  tests:  4|3
 total_score: 40/70
 669f535
+Sat Mar 12 11:09:59 HSP 2022: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'obtenerValor':
+exercises.c:105:8: error: variable 'valor' set but not used [-Werror=unused-but-set-variable]
+    int valor;
+        ^~~~~
+exercises.c:107:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+6780ba3
