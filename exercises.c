@@ -58,13 +58,10 @@ typedef struct {
 
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
-   Persona* Juan=malloc(sizeof(Persona));
-   memcpy(nombre,Juan.nombre,30);
-   memcpy(rut,Juan.rut,30);
-   Juan.edad=edad;
+
 
    
-   return Juan;
+   return NULL;
 }
 
 /*
@@ -98,7 +95,8 @@ Programe la función int obtenerValor(Vector * v, int i),
 la cual retorna el valor en la posición i del vector v.
 */
 int obtenerValor(Vector * v, int i) {
-   return 10;
+
+   return v[i];
 }
 
 /*
