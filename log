@@ -298,3 +298,13 @@ exercises.c:102:1: error: control reaches end of non-void function [-Werror=retu
 cc1.exe: all warnings being treated as errors
 Compilation failed
 88e973e
+Sat Mar 12 10:07:22 HSP 2022: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'obtenerValor':
+exercises.c:102:10: error: incompatible types when assigning to type 'int' from type 'Vector {aka struct <anonymous>}'
+    valor = v[i];
+          ^
+Compilation failed
+785a16f
