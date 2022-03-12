@@ -76,9 +76,8 @@ typedef struct {
 
 Vector * crearVector(int n) {
    Vector a;
-   a.capacidad=n;
-   a.datos=calloc(a.capacidad,sizeof(int));
-   return a;
+   a.datos=calloc(n,sizeof(int));
+   return *a;
 }
 
 /*
