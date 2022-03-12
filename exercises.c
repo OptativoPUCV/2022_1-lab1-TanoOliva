@@ -58,9 +58,6 @@ typedef struct {
 
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
-
-
-   
    return NULL;
 }
 
@@ -78,7 +75,10 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-   
+   Vector a;
+   a.datos=calloc(n,sizeof(int));
+   return &a.datos;
+}
 
 /*
 Ejercicio 5a.
@@ -95,8 +95,7 @@ Programe la función int obtenerValor(Vector * v, int i),
 la cual retorna el valor en la posición i del vector v.
 */
 int obtenerValor(Vector * v, int i) {
-
-   return v[i];
+   return 10;
 }
 
 /*
