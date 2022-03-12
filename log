@@ -59,3 +59,21 @@ exercises.c:98:9: error: incompatible types when assigning to type 'int' from ty
          ^
 Compilation failed
 119f607
+Fri Mar 11 22:59:19 HSP 2022: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaV':
+exercises.c:107:16: error: invalid operands to binary + (have 'Vector {aka struct <anonymous>}' and 'Vector {aka struct <anonymous>}')
+       c[i]=a[i]+b[i]
+            ~~~~^~~~~
+exercises.c:108:4: error: expected ';' before '}' token
+    }
+    ^
+exercises.c: In function 'obtenerValor':
+exercises.c:98:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+5186b71
