@@ -75,9 +75,9 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-   Vector a;
+   Vector* a;
    a.datos=calloc(n,sizeof(int));
-   return &a.datos;
+   return a;
 }
 
 /*
