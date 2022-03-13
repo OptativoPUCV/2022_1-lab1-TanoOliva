@@ -595,3 +595,9 @@ exercises.c:127:12: error: variable 'a' set but not used [-Werror=unused-but-set
 cc1.exe: all warnings being treated as errors
 Compilation failed
 cc427e2
+Sun Mar 13 18:14:25 HSP 2022: 
+ exercises.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+ tests:  7|1
+total_score: 60/70
+14f318a
