@@ -564,3 +564,20 @@ Sun Mar 13 18:10:04 HSP 2022:
  tests:  7|1
 total_score: 60/70
 967c6fe
+Sun Mar 13 18:12:10 HSP 2022: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaV2':
+exercises.c:129:5: error: incompatible types when assigning to type 'Vector {aka struct <anonymous>}' from type 'Vector * {aka struct <anonymous> *}'
+    b=crearVector(2);
+     ^
+exercises.c:127:14: error: variable 'b' set but not used [-Werror=unused-but-set-variable]
+    Vector* a,b;
+              ^
+exercises.c:127:12: error: variable 'a' set but not used [-Werror=unused-but-set-variable]
+    Vector* a,b;
+            ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+ffd3136
