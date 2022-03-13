@@ -581,3 +581,17 @@ exercises.c:127:12: error: variable 'a' set but not used [-Werror=unused-but-set
 cc1.exe: all warnings being treated as errors
 Compilation failed
 ffd3136
+Sun Mar 13 18:12:32 HSP 2022: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaV2':
+exercises.c:128:12: error: variable 'b' set but not used [-Werror=unused-but-set-variable]
+    Vector* b;
+            ^
+exercises.c:127:12: error: variable 'a' set but not used [-Werror=unused-but-set-variable]
+    Vector* a;
+            ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+cc427e2
