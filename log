@@ -474,3 +474,38 @@ exercises.c:115:6: note: expected 'Vector * {aka struct <anonymous> *}' but argu
 cc1.exe: all warnings being treated as errors
 Compilation failed
 342aef0
+Sun Mar 13 18:08:53 HSP 2022: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaV2':
+exercises.c:128:18: error: incompatible type for argument 1 of 'crearVector'
+    a=crearVector(*a);
+                  ^
+exercises.c:82:10: note: expected 'int' but argument is of type 'Vector {aka struct <anonymous>}'
+ Vector * crearVector(int n) {
+          ^~~~~~~~~~~
+exercises.c:129:18: error: invalid type argument of unary '*' (have 'Vector {aka struct <anonymous>}')
+    b=crearVector(*b);
+                  ^~
+exercises.c:130:17: error: 'v' undeclared (first use in this function)
+    asignarValor(v,0,a1);
+                 ^
+exercises.c:130:17: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:134:13: error: invalid type argument of unary '*' (have 'Vector {aka struct <anonymous>}')
+    sumaV(*a,*b,*c);
+             ^~
+exercises.c:134:10: error: incompatible type for argument 1 of 'sumaV'
+    sumaV(*a,*b,*c);
+          ^
+exercises.c:115:6: note: expected 'Vector * {aka struct <anonymous> *}' but argument is of type 'Vector {aka struct <anonymous>}'
+ void sumaV(Vector * a, Vector * b, Vector * c) {
+      ^~~~~
+exercises.c:134:16: error: incompatible type for argument 3 of 'sumaV'
+    sumaV(*a,*b,*c);
+                ^
+exercises.c:115:6: note: expected 'Vector * {aka struct <anonymous> *}' but argument is of type 'Vector {aka struct <anonymous>}'
+ void sumaV(Vector * a, Vector * b, Vector * c) {
+      ^~~~~
+Compilation failed
+e752ea2
