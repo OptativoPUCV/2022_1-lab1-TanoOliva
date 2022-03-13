@@ -558,3 +558,9 @@ exercises.c:115:6: note: expected 'Vector * {aka struct <anonymous> *}' but argu
       ^~~~~
 Compilation failed
 afe1e79
+Sun Mar 13 18:10:04 HSP 2022: 
+ exercises.c | 9 +--------
+ 1 file changed, 1 insertion(+), 8 deletions(-)
+ tests:  7|1
+total_score: 60/70
+967c6fe
